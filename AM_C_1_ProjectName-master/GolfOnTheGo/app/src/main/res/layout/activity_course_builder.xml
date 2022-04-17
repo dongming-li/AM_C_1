@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nate.golfonthego.CourseBuilder" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/courseBuilderMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.nate.golfonthego.CourseBuilder" />
+
+    <RadioGroup
+        android:id="@+id/rdoGroupEditorSelector"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#80000000"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <RadioButton
+            android:id="@+id/rdoTee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/tee"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rdoFairway"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/fairway"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rdoGreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/green"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rdoFlag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/flag"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add"
+            android:background="@drawable/basic_button" />
+    </RadioGroup>
+</FrameLayout>

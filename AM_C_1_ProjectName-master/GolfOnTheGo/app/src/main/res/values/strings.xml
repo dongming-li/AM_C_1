@@ -1,0 +1,445 @@
+<resources>
+    <string name="app_name">Golf On The Go</string>
+    <string name="title_activity_course">Map</string>
+    <string name="title_location_permission">Access Location</string>
+    <string name="text_location_permission">Allow us to access your location to play the game?</string>
+    <string name="ok">ok</string>
+    <string name="map_style">[
+  {
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"color\": \"#1d2c4d\"
+      }
+    ]
+  },
+  {
+    \"elementType\": \"labels\",
+    \"stylers\": [
+      {
+        \"visibility\": \"off\"
+      }
+    ]
+  },
+  {
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#8ec3b9\"
+      }
+    ]
+  },
+  {
+    \"elementType\": \"labels.text.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#1a3646\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"administrative\",
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"visibility\": \"off\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"administrative.country\",
+    \"elementType\": \"geometry.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#4b6878\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"administrative.land_parcel\",
+    \"stylers\": [
+      {
+        \"visibility\": \"off\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"administrative.land_parcel\",
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#64779e\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"administrative.neighborhood\",
+    \"stylers\": [
+      {
+        \"visibility\": \"off\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"administrative.province\",
+    \"elementType\": \"geometry.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#4b6878\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"landscape.man_made\",
+    \"stylers\": [
+      {
+        \"visibility\": \"on\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"landscape.man_made\",
+    \"elementType\": \"geometry.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#334e87\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"landscape.natural\",
+    \"stylers\": [
+      {
+        \"visibility\": \"on\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"landscape.natural\",
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"color\": \"#023e58\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"landscape.natural.landcover\",
+    \"stylers\": [
+      {
+        \"visibility\": \"on\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"landscape.natural.terrain\",
+    \"stylers\": [
+      {
+        \"visibility\": \"on\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"poi\",
+    \"stylers\": [
+      {
+        \"visibility\": \"off\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"poi\",
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"color\": \"#283d6a\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"poi\",
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#6f9ba5\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"poi\",
+    \"elementType\": \"labels.text.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#1d2c4d\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"poi.park\",
+    \"elementType\": \"geometry.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#023e58\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"poi.park\",
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#3C7680\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road\",
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"color\": \"#304a7d\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road\",
+    \"elementType\": \"labels.icon\",
+    \"stylers\": [
+      {
+        \"visibility\": \"off\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road\",
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#98a5be\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road\",
+    \"elementType\": \"labels.text.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#1d2c4d\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road.highway\",
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"color\": \"#2c6675\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road.highway\",
+    \"elementType\": \"geometry.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#255763\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road.highway\",
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#b0d5ce\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"road.highway\",
+    \"elementType\": \"labels.text.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#023e58\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"transit\",
+    \"stylers\": [
+      {
+        \"visibility\": \"off\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"transit\",
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#98a5be\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"transit\",
+    \"elementType\": \"labels.text.stroke\",
+    \"stylers\": [
+      {
+        \"color\": \"#1d2c4d\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"transit.line\",
+    \"elementType\": \"geometry.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#283d6a\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"transit.station\",
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"color\": \"#3a4762\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"water\",
+    \"elementType\": \"geometry\",
+    \"stylers\": [
+      {
+        \"color\": \"#0e1626\"
+      }
+    ]
+  },
+  {
+    \"featureType\": \"water\",
+    \"elementType\": \"labels.text.fill\",
+    \"stylers\": [
+      {
+        \"color\": \"#4e6d70\"
+      }
+    ]
+  }
+]</string>
+    <string name="userName">UserName</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="howtoplay">How To Play</string>
+    <string name="regConfpass">Confirm</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="tutorial">After logging in, select your course from the \'Courses\' button.\n
+        \nNavigate back to the \'Play\' button and find the tee location on the map. Physically walk to this tee location to start the hole.\n
+        \nRotate your screen to aim your shot and press the swing button when you are ready to swing. Physically swing your phone, emulating a golf swing, to hit the ball forward.\n
+        \nDifferent clubs can hit the ball farther or shorter, but the power of your swing will affect how far the ball goes.</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="playbutton">Play</string>
+    <string name="title_activity_accelerometer_test">AccelerometerTest</string>
+    <string name="friends">Friends</string>
+    <string name="courses">Courses</string>
+    <string name="med">Med</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="leader_boards">Leader Boards</string>
+    <string name="mute">Mute</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guilds">Guilds</string>
+    <string name="title_activity_guild_info_screen">guildInfoScreen</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="guildName">Guild Name</string>
+    <string name="starteventname">Starting Event Name</string>
+    <string name="startingEventDate">Starting Event Date</string>
+    <string name="title_activity_course_builder">courseBuild</string>
+    <string name="addCourse">Add Course</string>
+    <string name="addHole">Add Hole</string>
+    <string name="tee">Tee</string>
+    <string name="fairway">Fwry</string>
+    <string name="green">Green</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="selectCourse">Select Course</string>
+    <string name="buildCourse">Build</string>
+    <string name="flag">Flag</string>
+</resources>

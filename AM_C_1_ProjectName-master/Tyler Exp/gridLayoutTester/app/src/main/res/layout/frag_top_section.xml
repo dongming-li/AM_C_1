@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/topMemeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/black"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:inputType="textImeMultiLine"/>
+
+    <EditText
+        android:id="@+id/bottomMemeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topMemeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:width="300dp"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/black"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:inputType="textImeMultiLine"/>
+
+    <Button
+        android:id="@+id/memeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memeify"
+        android:layout_below="@+id/bottomMemeInput"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>

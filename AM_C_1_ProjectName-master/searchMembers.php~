@@ -1,0 +1,26 @@
+<?php
+    error_reporting(-1);
+ini_set('display_errors','On');
+
+include('dbConnection.php');
+
+$userName = $_GET['userName'];
+
+getGuildMembers($userName);
+
+function getGuildMembers($userName){
+    global $con;
+    $query = "select * from db309amc1.user where user.userName like '%$userName%'";
+    
+    $result = mysqli_query($con, $query);
+
+    $rows = array();
+    while($r = mysqli_fetch_assoc($result)) {
+        $rows[] = $r;
+    }
+
+    echo json_encode($rows);
+
+    $con->close();
+}
+?>

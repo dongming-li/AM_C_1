@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GridLayoutTester</string>
+    <string name="btntxtTextChange">Click Here</string>
+    <string name="txttxtHello" />
+    <string name="memeify">Memeify</string>
+    <string name="top_text">Top Text</string>
+    <string name="bot_text">Bot Text</string>
+</resources>

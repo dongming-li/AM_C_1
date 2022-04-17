@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/UITest.iml" filepath="$PROJECT_DIR$/UITest.iml" />
+      <module fileurl="file://C:\Users\resh_tkranig\AndroidStudioProjects\AM_C_1_ProjectName\UITest\UITest.iml" filepath="C:\Users\resh_tkranig\AndroidStudioProjects\AM_C_1_ProjectName\UITest\UITest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\resh_tkranig\AndroidStudioProjects\AM_C_1_ProjectName\UITest\app\app.iml" filepath="C:\Users\resh_tkranig\AndroidStudioProjects\AM_C_1_ProjectName\UITest\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-connector-java-5.1.44-bin/mysql-connector-java-5.1.44-bin.iml" filepath="$PROJECT_DIR$/mysql-connector-java-5.1.44-bin/mysql-connector-java-5.1.44-bin.iml" />
+      <module fileurl="file://C:\Users\resh_tkranig\AndroidStudioProjects\AM_C_1_ProjectName\UITest\mysql-connector-java-5.1.44-bin\mysql-connector-java-5.1.44-bin.iml" filepath="C:\Users\resh_tkranig\AndroidStudioProjects\AM_C_1_ProjectName\UITest\mysql-connector-java-5.1.44-bin\mysql-connector-java-5.1.44-bin.iml" />
+    </modules>
+  </component>
+</project>
